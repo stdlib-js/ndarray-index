@@ -42,8 +42,8 @@ limitations under the License.
 In JavaScript, only strings and symbols are valid property names. When providing values for property names which are not string or symbols, the values are serialized to strings **prior to** attempting to access property values. For example, the following
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 // Create an ndarray:
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
@@ -59,8 +59,8 @@ var v = x[ y ]; // => desired: <ndarray>[ 1, 3 ]
 is equivalent to
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 var y = [ 0, 2 ];
@@ -85,32 +85,20 @@ Specifically, instantiated `ndindex` objects are assigned a unique identifier an
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-index
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var ndindex = require( '@stdlib/ndarray-index' );
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { cartesianIndex, linearIndex } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -120,8 +108,8 @@ var ndindex = require( '@stdlib/ndarray-index' );
 Wraps a provided [ndarray][@stdlib/ndarray/ctor] as an index object.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -150,8 +138,8 @@ By default, an `ndindex` is invalidated and removed from an internal cache immed
 One may, however, want to reuse an `ndindex` instance to avoid additional memory allocation. In order to persist an `ndindex` and prevent automatic cache invalidation, set the `persist` option to `true`.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -200,8 +188,8 @@ var str = ndindex.name;
 **Read-only** property returning an [ndarray][@stdlib/ndarray/ctor] view of the underlying [ndarray][@stdlib/ndarray/ctor] data associated with an `ndindex` instance.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -219,8 +207,8 @@ var v = idx.data;
 **Read-only** property returning the [data type][@stdlib/ndarray/dtypes] of the underlying [ndarray][@stdlib/ndarray/ctor] associated with an `ndindex` instance.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -238,8 +226,8 @@ var dt = idx.dtype;
 **Read-only** property returning the unique identifier associated with an `ndindex` instance.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -259,8 +247,8 @@ The identifier should be used by `ndindex` consumers to resolve the underlying d
 **Read-only** property returning a boolean indicating whether an `ndindex` instance is actively cached.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -278,8 +266,8 @@ var out = idx.isCached;
 **Read-only** property returning the [ndarray][@stdlib/ndarray/ctor] index kind.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -304,8 +292,8 @@ The following [ndarray][@stdlib/ndarray/ctor] index kinds are supported:
 **Read-only** property returning the [ndarray][@stdlib/ndarray/ctor] index type.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -333,8 +321,8 @@ The following [ndarray][@stdlib/ndarray/ctor] index types are supported:
 Frees the `ndindex` associated with a provided identifier.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -358,8 +346,8 @@ Once an `ndindex` is freed, the instance is invalid and can no longer be used. A
 Returns the [ndarray][@stdlib/ndarray/ctor] associated with the `ndindex` having a provided identifier.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -399,8 +387,8 @@ If the `ndindex` associated with a provided identifier was not explicitly persis
 Wraps a provided [ndarray][@stdlib/ndarray/ctor] as a Cartesian index object.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ), {
     'shape': [ 2, 2 ]
@@ -419,8 +407,8 @@ This method is a convenience method for creating an `ndindex` with the `kind` op
 Wraps a provided [ndarray][@stdlib/ndarray/ctor] as a linear index object.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -437,8 +425,8 @@ This method is a convenience method for creating an `ndindex` with the `kind` op
 Serializes an `ndindex` as a string.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -458,8 +446,8 @@ An `ndindex` is intended to be an opaque object used by objects supporting "fanc
 Serializes an `ndindex` as a [JSON][json] object.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var Int32Array = require( '@stdlib/array-int32' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -491,8 +479,8 @@ var o = idx.toJSON();
 -   Because non-persisted `ndindex` instances are freed after first use, in order to avoid holding onto memory and to allow garbage collection, one should avoid scenarios in which an `ndindex` is never used. For example,
 
     ```javascript
-    var array = require( '@stdlib/ndarray-array' );
-    var Int32Array = require( '@stdlib/array-int32' );
+    import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+    import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
     var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -510,8 +498,8 @@ var o = idx.toJSON();
     will leak memory as `idx` is only consumed within an `if` block which never evaluates. In such scenarios, one should either refactor to avoid inadvertently holding onto memory or explicitly free the `ndindex`. 
 
     ```javascript
-    var array = require( '@stdlib/ndarray-array' );
-    var Int32Array = require( '@stdlib/array-int32' );
+    import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+    import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
     var x = array( new Int32Array( [ 1, 2, 3, 4 ] ) );
 
@@ -543,8 +531,8 @@ var o = idx.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var empty = require( '@stdlib/ndarray-empty' );
-var ndindex = require( '@stdlib/ndarray-index' );
+import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@deno/mod.js';
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
 
 var x = empty( [ 5 ], {
     'dtype': 'uint8'
@@ -620,7 +608,7 @@ console.log( 'Type: %s. Data type: %s.', o.type, o.dtype );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -685,15 +673,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
+[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor/tree/deno
 
-[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray-base-ctor
+[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray-base-ctor/tree/deno
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
 
-[@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray-to-fancy
+[@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray-to-fancy/tree/deno
 
 </section>
 
