@@ -3,8 +3,31 @@
   "version": "0.0.0",
   "description": "ndarray index constructor.",
   "license": "Apache-2.0",
-  "type": "module",
-  "main": "./index.mjs",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -13,6 +36,56 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/array-base-assert-contains": "^0.2.2",
+    "@stdlib/assert-has-own-property": "^0.2.2",
+    "@stdlib/assert-is-boolean": "^0.2.2",
+    "@stdlib/assert-is-integer": "^0.2.2",
+    "@stdlib/assert-is-ndarray-like": "^0.2.2",
+    "@stdlib/assert-is-plain-object": "^0.2.2",
+    "@stdlib/ndarray-base-dtype": "^0.2.2",
+    "@stdlib/ndarray-base-ndarraylike2ndarray": "github:stdlib-js/ndarray-base-ndarraylike2ndarray#main",
+    "@stdlib/ndarray-to-json": "github:stdlib-js/ndarray-to-json#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/utils-define-nonenumerable-property": "^0.2.2",
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
+    "@stdlib/utils-linked-list": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+  },
+  "devDependencies": {
+    "@stdlib/array-base-to-accessor-array": "^0.2.2",
+    "@stdlib/array-bool": "^0.1.0",
+    "@stdlib/array-float64": "^0.2.2",
+    "@stdlib/array-int32": "^0.2.2",
+    "@stdlib/array-uint8": "^0.2.2",
+    "@stdlib/assert-instance-of": "^0.2.2",
+    "@stdlib/assert-is-method": "^0.2.2",
+    "@stdlib/assert-is-string": "^0.2.2",
+    "@stdlib/ndarray-array": "^0.2.1",
+    "@stdlib/ndarray-empty": "^0.3.0",
+    "@stdlib/ndarray-zeros": "^0.3.0",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdtypes",
