@@ -39,7 +39,7 @@ limitations under the License.
 
 <section class="intro">
 
-In JavaScript, only strings and symbols are valid property names. When providing values for property names which are not string or symbols, the values are serialized to strings **prior to** attempting to access property values. For example, the following
+In JavaScript, only strings and symbols are valid property names. When providing values for property names which are not strings or symbols, the values are serialized to strings **prior to** attempting to access property values. For example, the following
 
 ```javascript
 var array = require( '@stdlib/ndarray-array' );
@@ -637,7 +637,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
