@@ -43,6 +43,7 @@
     "@stdlib/assert-is-integer": "^0.2.2",
     "@stdlib/assert-is-ndarray-like": "^0.2.2",
     "@stdlib/assert-is-plain-object": "^0.2.2",
+    "@stdlib/dstructs-linked-list": "github:stdlib-js/dstructs-linked-list#main",
     "@stdlib/ndarray-base-dtype": "^0.2.2",
     "@stdlib/ndarray-base-ndarraylike2ndarray": "github:stdlib-js/ndarray-base-ndarraylike2ndarray#main",
     "@stdlib/ndarray-to-json": "github:stdlib-js/ndarray-to-json#main",
@@ -51,7 +52,6 @@
     "@stdlib/utils-define-nonenumerable-property": "^0.2.2",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/utils-linked-list": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
