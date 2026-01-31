@@ -92,13 +92,18 @@ Specifically, instantiated `ndindex` objects are assigned a unique identifier an
 ## Usage
 
 ```javascript
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-index/tags). For example,
+
+```javascript
 import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { cartesianIndex, linearIndex } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-esm/index.mjs';
+import { cartesianIndex, linearIndex } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -537,7 +542,7 @@ var o = idx.toJSON();
 <script type="module">
 
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@esm/index.mjs';
-import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-esm/index.mjs';
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@esm/index.mjs';
 
 var x = empty( [ 5 ], {
     'dtype': 'uint8'
