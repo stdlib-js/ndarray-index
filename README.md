@@ -94,6 +94,11 @@ Specifically, instantiated `ndindex` objects are assigned a unique identifier an
 To use in Observable,
 
 ```javascript
+ndindex = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-index/tags). For example,
+
+```javascript
 ndindex = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-umd/browser.js' )
 ```
 
@@ -106,7 +111,7 @@ var ndindex = require( 'path/to/vendor/umd/ndarray-index/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -553,7 +558,7 @@ var o = idx.toJSON();
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
