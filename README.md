@@ -92,13 +92,18 @@ Specifically, instantiated `ndindex` objects are assigned a unique identifier an
 ## Usage
 
 ```javascript
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-index/tags). For example,
+
+```javascript
 import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { cartesianIndex, linearIndex } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-deno/mod.js';
+import { cartesianIndex, linearIndex } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -532,7 +537,7 @@ var o = idx.toJSON();
 
 ```javascript
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@deno/mod.js';
-import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@v0.1.0-deno/mod.js';
+import ndindex from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-index@deno/mod.js';
 
 var x = empty( [ 5 ], {
     'dtype': 'uint8'
