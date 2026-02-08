@@ -47,7 +47,7 @@
     "@stdlib/ndarray-base-dtype": "^0.2.3",
     "@stdlib/ndarray-base-ndarraylike2ndarray": "^0.1.1",
     "@stdlib/ndarray-to-json": "^0.1.1",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-property": "^0.2.3",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.4",
